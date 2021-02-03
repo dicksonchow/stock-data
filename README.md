@@ -47,3 +47,32 @@ The **requirements.txt** file stores all the dependencies packages and the assoc
 To install all the dependencies packages specified in the requirements.txt, you can execute the following command.
 
 ```$ pip install -r requirements.txt```
+
+# Development tool
+You can use PyCharm to open this project and therefore execute the python python with a few button clicks.
+
+Navigate to the following URL to download PyCharm community.
+https://www.jetbrains.com/pycharm/download/#section=mac
+
+# Execute the program
+After you have cloned the project and managed to open it with PyCharm, you should see a list of files on the left panel.
+Right click the main.py to execute the program.
+
+## Change the stock number or different types of data
+You can change the follow section and then execute the program again
+```
+aastocks_query_params = {
+        'symbol': '00700',
+        'type': 'ubbull'
+    }
+```
+
+And for the type, please refer to the follow mapping:
+```
+ubbull -> 超大手買盤
+bbull  -> 大手買盤
+rbull  -> 散戶買盤
+ubbear -> 超大手賣盤
+bbear  -> 大手賣盤
+rbear  -> 散戶賣盤
+```
